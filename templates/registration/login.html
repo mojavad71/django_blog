@@ -1,0 +1,19 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    log in
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="card shadow my-3 p-5">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-outline-info">Log in</button>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}

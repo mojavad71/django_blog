@@ -1,0 +1,9 @@
+{% for post in posts_list %}
+    {{ post.title }}
+    <br>
+    {{ post.text }}
+    <br>
+    {{ post.datetime_create }}
+    <p>---------------------</p>
+    <br>
+{% endfor %}
